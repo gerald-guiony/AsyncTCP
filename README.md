@@ -1,13 +1,15 @@
 # AsyncTCP 
-[![Build Status](https://travis-ci.org/me-no-dev/AsyncTCP.svg?branch=master)](https://travis-ci.org/me-no-dev/AsyncTCP) ![](https://github.com/me-no-dev/AsyncTCP/workflows/Async%20TCP%20CI/badge.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2f7e4d1df8b446d192cbfec6dc174d2d)](https://www.codacy.com/manual/me-no-dev/AsyncTCP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=me-no-dev/AsyncTCP&amp;utm_campaign=Badge_Grade)
+[![ESP32](https://img.shields.io/badge/ESP-32-000000.svg?longCache=true&style=flat&colorA=CC101F)](https://www.espressif.com/en/products/socs/esp32)
 
 ### Async TCP Library for ESP32 Arduino
 
-[![Join the chat at https://gitter.im/me-no-dev/ESPAsyncWebServer](https://badges.gitter.im/me-no-dev/ESPAsyncWebServer.svg)](https://gitter.im/me-no-dev/ESPAsyncWebServer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 This is a fully asynchronous TCP library, aimed at enabling trouble-free, multi-connection network environment for Espressif's ESP32 MCUs.
 
-This library is the base for [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
+This library is a base for [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
 
-## AsyncClient and AsyncServer
-The base classes on which everything else is built. They expose all possible scenarios, but are really raw and require more skills to use.
+It's a forked version of the original ESP32 [AsyncTCP](https://github.com/me-no-dev/AsyncTCP) library with missing AsyncTCPBuffer class added to make it API-compatible with ESP8266 [ESPAsyncTCP](https://github.com/me-no-dev/ESPAsyncTCP) library
+
+## Installing Async TCP Library
+
+1. Download the latest master source code as a [.zip](https://github.com/gerald-guiony/AsyncTCP/archive/master.zip) file
+2. In the Arduino IDE, import the `.zip` file by navigating to **Sketch → Include Library → Add .ZIP Library**
